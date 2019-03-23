@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="D:\javadev\tools" version="1.8.0_201">
+<bootpath>
+<entry path="D:\javadev\tools\jre\lib\resources.jar"/>
+<entry path="D:\javadev\tools\jre\lib\rt.jar"/>
+<entry path="D:\javadev\tools\jre\lib\sunrsasign.jar"/>
+<entry path="D:\javadev\tools\jre\lib\jsse.jar"/>
+<entry path="D:\javadev\tools\jre\lib\jce.jar"/>
+<entry path="D:\javadev\tools\jre\lib\charsets.jar"/>
+<entry path="D:\javadev\tools\jre\lib\jfr.jar"/>
+<entry path="D:\javadev\tools\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\javadev\tools\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\javadev\tools\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\javadev\tools\jre" version="1.8.0_201">
+<bootpath>
+<entry path="D:\javadev\tools\jre\lib\resources.jar"/>
+<entry path="D:\javadev\tools\jre\lib\rt.jar"/>
+<entry path="D:\javadev\tools\jre\lib\sunrsasign.jar"/>
+<entry path="D:\javadev\tools\jre\lib\jsse.jar"/>
+<entry path="D:\javadev\tools\jre\lib\jce.jar"/>
+<entry path="D:\javadev\tools\jre\lib\charsets.jar"/>
+<entry path="D:\javadev\tools\jre\lib\jfr.jar"/>
+<entry path="D:\javadev\tools\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\javadev\tools\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\javadev\tools\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

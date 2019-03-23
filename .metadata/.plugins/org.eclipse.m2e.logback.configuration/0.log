@@ -1,0 +1,192 @@
+2019-03-10 01:47:56,747 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-03-10 01:48:14,092 [Worker-1: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 01:48:14,137 [Worker-1: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 01:48:14,201 [Worker-1: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 01:48:14,203 [Worker-1: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 01:54:10,784 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://github.com/spring-io/initializr/io/spring/initializr/initializr/0.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+2019-03-10 01:54:11,013 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://github.com/spring-io/initializr/io/spring/initializr/initializr/0.8.0.BUILD-SNAPSHOT/initializr-0.8.0.BUILD-SNAPSHOT.pom
+2019-03-10 01:54:11,029 [ModalContext] ERROR o.e.m.c.u.i.w.MavenProjectWizardArchetypePage - Can't resolve Archetype io.spring.initializr:initializr:0.8.0.BUILD-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.spring.initializr:initializr:pom:0.8.0.BUILD-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardArchetypePage$17.run(MavenProjectWizardArchetypePage.java:842) ~[org.eclipse.m2e.core.ui_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.15.0.v20181123-1505.jar:na]
+2019-03-10 02:00:56,764 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-10 02:01:06,460 [Worker-8: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 02:01:06,490 [Worker-8: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 02:01:06,523 [Worker-8: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 02:01:06,554 [Worker-8: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:541) ~[org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.10.0.20181127-2120.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\G6\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_201]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_201]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_201]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-03-10 02:01:21,856 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://127.0.0.1:8081/artifactory/libs-release/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2019-03-10 02:01:21,860 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://127.0.0.1:8081/artifactory/libs-snapshot/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
